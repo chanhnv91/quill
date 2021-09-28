@@ -9547,7 +9547,7 @@ PasteManager = (function() {
     this._onConvert = bind(this._onConvert, this);
     this.container = this.quill.addContainer('ql-paste-manager');
     this.container.setAttribute('contenteditable', true);
-    this.container.setAttribute('data-placeholder)', 'nhap vao day');
+    this.container.setAttribute('data-placeholder', 'nhap vao day');
     this.container.setAttribute('tabindex', '-1');
     dom(this.quill.root).on('paste', _.bind(this._paste, this));
     this.options = _.defaults(options, PasteManager.DEFAULTS);
