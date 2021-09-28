@@ -10298,6 +10298,9 @@ Quill = (function(superClass) {
     if (themeClass == null) {
       throw new Error("Cannot load " + this.options.theme + " theme. Are you sure you registered it?");
     }
+    this.root.children[0].setAttribute('class', "holder");
+    this.root.children[0].setAttribute('contentEditable', true);
+    this.root.children[0].setAttribute('data-placeholder', 'nhap vao day xem');
     this.theme = new themeClass(this, this.options);
     _.each(this.options.modules, (function(_this) {
       return function(option, name) {
