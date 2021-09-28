@@ -149,7 +149,7 @@
 /* .ql-editor:empty:before {
     content: attr(data-placeholder);
 } */
-.holder:empty:before {
+.ql-editor .holder:empty:before {
     content: attr(data-placeholder);
 }
 .ql-editor div {
