@@ -10290,7 +10290,6 @@ Quill = (function(superClass) {
     this.options.id = this.id = "ql-editor-" + (Quill.editors.length + 1);
     this.modules = {};
     this.root = this.addContainer('ql-editor');
-    this.root.setAttribute('data-placeholder', 'nhap vao day xem');
     this.editor = new Editor(this.root, this, this.options);
     Quill.editors.push(this);
     this.setHTML(html, Quill.sources.SILENT);
