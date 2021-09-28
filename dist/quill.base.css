@@ -146,6 +146,9 @@
   tab-size: 4;
   white-space: pre-wrap;
 }
+.ql-editor:empty:not(:focus):before {
+  content: attr(data-placeholder)
+}
 .ql-editor div {
   margin: 0;
   padding: 0;
